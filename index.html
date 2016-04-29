@@ -21,6 +21,9 @@
     <section class="main-content">
       <p><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a><br>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 
+<h1>
+<a id="feature-tests-in-rails" class="anchor" href="#feature-tests-in-rails" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature Tests in Rails</h1>
+
 <h2>
 <a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h2>
 
@@ -89,13 +92,14 @@
 <a id="feature-files" class="anchor" href="#feature-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Feature files</h2>
 
 <ul>
-<li>Write short features about the story you implement.</li>
+<li>Write the shortest possible features about the story you implement.</li>
 <li>If all your stories 'travel' through your system
 
 <ul>
 <li>They will be slow</li>
 <li>They will not be focused on the <em>stand-out</em> aspects of the feature</li>
 <li>They will get cumbersome and you'll be inclined to dry up, and thus hide, important details.</li>
+<li>Tests that rely on a significant proportion of 'travel' will not stand out. If all tests travel, then it's hard to know when a certain must travel.</li>
 </ul>
 </li>
 </ul>
@@ -117,7 +121,7 @@ And he downloads the widget app
 Then he has our awesome widget app 
 </code></pre>
 
-<p>There is no evidence that he can register and log in to do so. That's ok, so long as a test exists for <code>A user registers with the site</code> and <code>A registered yser can log in</code>.</p>
+<p>There is no evidence that he can register and log in to do so. That's ok, so long as a test exists for <code>A user registers with the site</code> and <code>A registered user can log in</code>.</p>
 
 <p>It is possible that between <code>Register</code> and <code>Login</code> and between <code>Login</code> and <code>Download</code> that something could change and invalidate a test. Perhaps the download link no longer appears on the page you see after login. This is where you do need <strong>travelling</strong> tests.</p>
 
