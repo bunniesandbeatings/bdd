@@ -37,11 +37,12 @@ Some *DRY* guidelines:
 * Don't dry up expectations (Then)
 
 ## Feature files
-* Write short features about the story you implement.
+* Write the shortest possible features about the story you implement.
 * If all your stories 'travel' through your system
   * They will be slow
   * They will not be focused on the *stand-out* aspects of the feature
   * They will get cumbersome and you'll be inclined to dry up, and thus hide, important details.
+  * Tests that rely on a significant proportion of 'travel' will not stand out. If all tests travel, then it's hard to know when a certain must travel.
 
 Instead, establish a background at the start of test and mitigate the risk that the whole story is not played out by:
   * Use a smoke test for important paths through the system
