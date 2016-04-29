@@ -59,7 +59,7 @@ And he downloads the widget app
 Then he has our awesome widget app 
 ```
 
-There is no evidence that he can register and log in to do so. That's ok, so long as a test exists for `A user registers with the site` and `A registered yser can log in`.
+There is no evidence that he can register and log in to do so. That's ok, so long as a test exists for `A user registers with the site` and `A registered user can log in`.
 
 It is possible that between `Register` and `Login` and between `Login` and `Download` that something could change and invalidate a test. Perhaps the download link no longer appears on the page you see after login. This is where you do need **travelling** tests.
 
